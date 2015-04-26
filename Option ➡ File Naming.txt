@@ -1,0 +1,29 @@
+$noop(© Avi Alkalay: freely distributable)
+
+$noop(Please uncheck "Replace non-ASCII characters" and "Replace Windows-incompatible characters")
+
+$noop(★★★★★ if you want to organize by genres, remove this line
+	$if(%genre%,
+		%genre%/,
+	)
+if you want to organize by genres, remove this line too ★★★★★)
+
+$if($eq($left($lower(%_albumartistForFilename%),4),the ),
+	$right(%_albumartistForFilename%, $sub($len(%_albumartistForFilename%),4)),
+	%_albumartistForFilename%
+)/
+
+$if($if2(%originaldate%,%date%),
+	$left($if2(%originaldate%,%date%),4) • ,
+)
+%_albumForFilename%/
+
+$if($gt(%totaldiscs%,1),
+	$if(%_discsubtitleForFilename%,
+		$num(%discnumber%,2) %_discsubtitleForFilename%/,
+		$num(%discnumber%,2)∙)
+	,
+)
+
+$num(%tracknumber%,2) $if($not($eq(%artist%,%albumartist%)),%_artistForFilename% ♫ )%_titleForFilename%
+$noop($num(%tracknumber%,2) %_titleForFilename%)
