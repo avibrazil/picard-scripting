@@ -21,7 +21,7 @@ $if($if2(%originaldate%,%date%),
 $if($gt(%totaldiscs%,1),
 	$if(%_discsubtitleForFilename%,
 		$num(%discnumber%,2) %_discsubtitleForFilename%/,
-		$num(%discnumber%,2)∙)
+		$num(%discnumber%,2)·)
 	,
 )
 
