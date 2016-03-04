@@ -13,6 +13,8 @@ freely distributable
 
 )
 
+$set(date,$if2(%originaldate%,%date%))
+
 $noop(★ Typography for tags: changes will affect tags on media headers [and on what you see in players] ★)
 
 $noop(★ ...➡…)
