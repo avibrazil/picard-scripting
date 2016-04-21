@@ -64,6 +64,7 @@ $noop(★ ?➡⁇)
 $set(_titleForFilename,$replace(%_titleForFilename%,?,⁇))
 $set(_albumForFilename,$replace(%_albumForFilename%,?,⁇))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,?,⁇))
+$set(_artistForFilename,$replace(%_artistForFilename%,?,⁇))
 
 $set(_titleForFilename,$replace(%_titleForFilename%,/,／))
 $set(_albumForFilename,$replace(%_albumForFilename%,/,／))
