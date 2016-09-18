@@ -8,6 +8,8 @@ $noop(★★★★★ if you want to organize by genres, remove this line
 	)
 if you want to organize by genres, remove this line too ★★★★★)
 
+$set(_discFolder,1)
+
 $if($eq($left($lower(%_albumartistForFilename%),4),the ),
 	$right(%_albumartistForFilename%, $sub($len(%_albumartistForFilename%),4)),
 	%_albumartistForFilename%
@@ -19,12 +21,12 @@ $if($if2(%originaldate%,%date%),
 %_albumForFilename%/
 
 $if($gt(%totaldiscs%,1),
+	$num(%discnumber%,2)
 	$if(%_discsubtitleForFilename%,
-		$num(%discnumber%,2) %_discsubtitleForFilename%/,
-		$num(%discnumber%,2)·)
-	,
+		$if(%_discFolder%, %_discsubtitleForFilename%/,·)
+	),
 )
+	
 
 $num(%tracknumber%,2) $if($not($eq(%artist%,%albumartist%)),%_artistForFilename% ♫ )%_titleForFilename%
 $noop($num(%tracknumber%,2) %_titleForFilename%)
-
