@@ -24,10 +24,16 @@ $set(discsubtitle,$replace(%discsubtitle%,...,…))
 
 $noop(★ No.➡№)
 $set(title,$rreplace(%title%, [Nn]o.\\s*\(\\d\), №\\1))
-$set(album,$replace(%album%, [Nn]o.\\s*\(\\d\), №\\1))
-$set(discsubtitle,$replace(%discsubtitle%, [Nn]o.\\s*\(\\d\), №\\1))
+$set(album,$rreplace(%album%, [Nn]o.\\s*\(\\d\), №\\1))
+$set(discsubtitle,$rreplace(%discsubtitle%, [Nn]o.\\s*\(\\d\), №\\1))
+
+$noop(★ Nos.➡№)
+$set(title,$rreplace(%title%, [Nn]os.\\s*\(\\d\), №\\1))
+$set(album,$rreplace(%album%, [Nn]os.\\s*\(\\d\), №\\1))
+$set(discsubtitle,$rreplace(%discsubtitle%, [Nn]os.\\s*\(\\d\), №\\1))
 
 $noop(★ [digit]" ➡ [digit]″)
+$set(title,$rreplace(%title%,\(\\d\)",\\1″))
 $set(album,$rreplace(%album%,\(\\d\)",\\1″))
 $set(discsubtitle,$rreplace(%discsubtitle%,\(\\d\)",\\1″))
 
