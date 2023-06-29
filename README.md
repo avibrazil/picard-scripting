@@ -15,4 +15,4 @@ Here is a screenshot of some music files organized in my filesystem:
 
 For optimal results, this is how I configure Picard:
 
-!(Picard configuration)[https://raw.githubusercontent.com/avibrazil/picard-scripting/master/Picard%20Options.png]
+!(Picard configuration)[Picard Options.png]
