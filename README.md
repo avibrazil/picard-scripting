@@ -11,7 +11,7 @@ Picard can be scripted and these are my personal configurations. They do the fol
 
 Here is a screenshot of some music files organized in my filesystem:
 
-!(music files organized in the filesystem)[https://user-images.githubusercontent.com/3484242/249777417-dfcc86f1-775b-4162-a942-a09f35851329.png]
+<img src="https://user-images.githubusercontent.com/3484242/249777417-dfcc86f1-775b-4162-a942-a09f35851329.png"/>
 
 For optimal results, this is how I configure Picard:
 
