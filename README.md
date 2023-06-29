@@ -8,3 +8,11 @@ Picard can be scripted and these are my personal configurations. They do the fol
 * Rename the files according to the tags in a coherent ARTIST/ALBUM_WITH_YEAR/TRACK filesystem structure.
 * Change non-filesystem-friendly chars on filenames into filesystem-friendly ones using Unicode. For example: #➡♯, :➡∶, /➡／, *➡✱ etc
 * Correctly handle release date versus original release date, number of discs etc
+
+Here is a screenshot of some music files organized in my filesystem:
+
+!(music files organized in the filesystem)[https://user-images.githubusercontent.com/3484242/249777417-dfcc86f1-775b-4162-a942-a09f35851329.png]
+
+For optimal results, this is how I configure Picard:
+
+!(Picard configuration)[https://raw.githubusercontent.com/avibrazil/picard-scripting/master/Picard%20Options.png]
