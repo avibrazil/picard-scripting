@@ -1,6 +1,6 @@
 $noop(© Avi Alkalay: freely distributable)
 
-$noop(Name this script as "[artist]/[year] • [album]/[nn] {other_artist ♫ } [title].m4a")
+$noop(Name this script as "[artist]/[year] • [album]/[disc_title]/[nn] {other_artist ♫ } [title].m4a")
 
 $noop(Please uncheck "Replace non-ASCII characters" and "Replace Windows-incompatible characters")
 
@@ -10,9 +10,7 @@ $noop(★★★★★ if you want to organize by genres, remove this line
 	)
 if you want to organize by genres, remove this line too ★★★★★)
 
-$noop()
-$noop($set(_discFolder,1))
-$noop()
+$set(_discFolder,1)
 
 $if($eq($left($lower(%_albumartistForFilename%),4),the ),
 	$right(%_albumartistForFilename%, $sub($len(%_albumartistForFilename%),4)),
