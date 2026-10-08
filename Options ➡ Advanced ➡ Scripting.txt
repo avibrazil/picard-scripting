@@ -77,35 +77,41 @@ $set(_albumForFilename,$replace(%_albumForFilename%,?,⁇))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,?,⁇))
 $set(_artistForFilename,$replace(%_artistForFilename%,?,⁇))
 
+$noop(★ /➡／)
 $set(_titleForFilename,$replace(%_titleForFilename%,/,／))
 $set(_albumForFilename,$replace(%_albumForFilename%,/,／))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,/,／))
 $set(_artistForFilename,$replace(%_artistForFilename%,/,／))
 $set(_albumartistForFilename,$replace(%_albumartistForFilename%,/,／))
 
+$noop(★ backslash ➡＼)
 $set(_titleForFilename,$replace(%_titleForFilename%,\\,＼))
 $set(_albumForFilename,$replace(%_albumForFilename%,\\,＼))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,\\,＼))
 
+$noop(★ |➡ space)
 $set(_titleForFilename,$replace(%_titleForFilename%,|,￨))
 $set(_albumForFilename,$replace(%_albumForFilename%,|,￨))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,|,￨))
 
+$noop(★ >➡＞)
 $set(_titleForFilename,$replace(%_titleForFilename%,>,＞))
 $set(_albumForFilename,$replace(%_albumForFilename%,>,＞))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,>,＞))
 
+$noop(★ <➡＜)
 $set(_titleForFilename,$replace(%_titleForFilename%,<,＜))
 $set(_albumForFilename,$replace(%_albumForFilename%,<,＜))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,<,＜))
 
+$noop(★ *➡✱)
 $set(_titleForFilename,$replace(%_titleForFilename%,*,✱))
 $set(_albumForFilename,$replace(%_albumForFilename%,*,✱))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,*,✱))
 $set(_artistForFilename,$replace(%_artistForFilename%,*,✱))
 $set(_albumartistForFilename,$replace(%_albumartistForFilename%,*,✱))
 
-
+$noop(★ &➡＆)
 $set(_titleForFilename,$replace(%_titleForFilename%,&,＆))
 $set(_albumForFilename,$replace(%_albumForFilename%,&,＆))
 $set(_discsubtitleForFilename,$replace(%_discsubtitleForFilename%,&,＆))
